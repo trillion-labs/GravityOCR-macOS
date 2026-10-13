@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Model questions (GravityOCR)
+    url: https://github.com/trillion-labs/GravityOCR/issues
+    about: Questions about the GravityOCR model, its weights, or the inference code.
+  - name: Privacy inquiries
+    url: https://trillionlabs.co/
+    about: For privacy questions, use the contact channels on the Trillion Labs website.

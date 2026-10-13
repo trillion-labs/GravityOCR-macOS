@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest something you'd like Gravity to do.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the task or the problem. For example, "I scan receipts and want the totals in a spreadsheet."
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: Describe what you'd like Gravity to do.
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: How do you handle it today?
+      description: Any workaround or other app you use instead.

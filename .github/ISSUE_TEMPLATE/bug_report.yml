@@ -1,0 +1,76 @@
+name: Bug report
+description: Something in Gravity doesn't work or looks wrong.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. Issues are public, so please
+        don't attach documents that contain personal or confidential information.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem. What did you expect to happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we make it happen again?
+      placeholder: |
+        1. Open a two-page PDF
+        2. Click Recognize
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: gravity-version
+    attributes:
+      label: Gravity version
+      description: Find it in Gravity ▸ About Gravity.
+      placeholder: "0.3.4 (14)"
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+      description: Find it in Apple menu ▸ About This Mac.
+      placeholder: "macOS 15.6"
+    validations:
+      required: true
+  - type: input
+    id: mac-model
+    attributes:
+      label: Mac model
+      placeholder: "MacBook Air (M2, 16 GB)"
+  - type: dropdown
+    id: file-type
+    attributes:
+      label: File type
+      description: Which kind of file were you working with, if any?
+      options:
+        - PDF
+        - PNG
+        - JPEG
+        - HEIC
+        - TIFF
+        - Not related to a file
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or sample file
+      description: |
+        A screenshot or a sample file helps a lot. Only share files you're
+        comfortable making public.
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: |
+        If Gravity failed to start or stopped during recognition, paste the
+        end of `~/Library/Logs/Gravity/backend.log`. In Finder, choose
+        Go ▸ Go to Folder… and enter `~/Library/Logs/Gravity`.
+      render: text
